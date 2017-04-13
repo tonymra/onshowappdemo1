@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+RewriteEngine on
+
+RewriteBase /
+RewriteCond $1 !^(index\.php|testnewserver\.html|old\.html|img|landing|images|purchase|bootstrap|assets|uploads|captcha|v2|comeback|comingsoon|css|js|font|under_construction|front-end|robots\.txt|y7AhZe60vdBdRgLbHZUui-GnPFU\.html)
+RewriteRule ^(.*)$ index.php/$1 [L]
